@@ -1,0 +1,50 @@
+<html>
+<head>
+<style type="text/css">
+div{
+	float: left;
+	margin: 3px;
+}
+#d1{
+border:2px solid #a1a1a1;
+width:30%;
+padding:10px 40px;
+background:#0000ff;
+border-radius:25px;
+}
+#d2{
+border:2px solid #a1a1a1;
+width:30%;
+padding:10px 40px;
+background:#00ff00;
+border-radius:90px 0px 90px 0px  ;
+}
+
+</style>
+</head>
+<body>
+	<h1><u>LAKHYA INSTITUTE OF TECHNOLGY</u></h1>
+	<div>
+<div id="d1"><u>BSC ITM</u><br>
+-we provide the best environment to student<br>
+-ouur subjects<br>
+<select>
+	<option>QA</option>
+	<option>RES</option>
+	<option>ENG</option>
+
+
+</select>
+</div>
+<div id="d2"><u>BSC CS</u><br>
+-we provide the best environment to student<br>
+-ouur subjects<br>
+<select>
+	<option>C</option>
+	<option>C++</option>
+	<option>JAVA</option>
+
+
+</select></div></div>
+</body>
+</html>

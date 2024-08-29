@@ -1,0 +1,170 @@
+/* Base Styles (for desktops) */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--light-white);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures navigation stays on top */
+}
+
+.nav-logo {
+    height: 100px;
+    width: 120px;
+    filter: drop-shadow(2px 2px 10px rgb(255, 255, 255));
+}
+
+.navigation .nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .main-header {
+    font-size: 25px;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.navigation2 {
+    color: var(--light-white);
+    padding-top: 2rem;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.list-non-bullet {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item-inline {
+    display: inline-block;
+    padding: 0rem 0.3rem;
+}
+
+.navigation2 .nav-pills {
+    text-align: right;
+    margin: 0.6rem 1rem;
+}
+
+.navigation2 .link {
+    color: var(--light-white);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards, pulse 2s infinite;
+}
+
+.navigation2 .link:hover {
+    color: var(--light-grey);
+    transform: scale(1.1);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--off-blue);
+    padding: 20px;
+}
+
+.pre-text {
+    border: 1px solid cyan;
+    background: radial-gradient(circle, #2f94e2, #2f46ac);
+    color: var(--light-white);
+    padding: 10px;
+    text-align: center;
+}
+
+.h2-text {
+    color: aqua;
+}
+
+.lit-img {
+    height: 330px;
+    width: 600px;
+    margin: 10px 10px 10px 0px;
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation .main-header {
+        font-size: 20px;
+        padding-left: 0.5rem;
+    }
+
+    .navigation2 {
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding-top: 1rem;
+        position: relative;
+        text-align: center;
+    }
+
+    .navigation2 .nav-pills {
+        margin: 0.6rem 0;
+    }
+
+    .lit-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .navigation {
+        padding: 0.5rem;
+    }
+
+    .nav-logo {
+        height: 80px;
+        width: 100px;
+    }
+
+    .navigation .main-header {
+        font-size: 18px;
+        padding-left: 0.5rem;
+    }
+
+    .navigation2 {
+        padding-top: 0.5rem;
+    }
+
+    .navigation2 .nav-pills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-item-inline {
+        padding: 0.5rem 0;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    .pre-text {
+        font-size: 16px;
+    }
+
+    .lit-img {
+        width: 100%;
+        height: auto;
+    }
+}
